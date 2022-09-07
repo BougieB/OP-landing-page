@@ -1,109 +1,130 @@
 
-  .hyperlinks-container {
-    display: flex;
-    flex-flow: row wrap; 
-    align-items: flex-start;
-    background-color: #1f2937;
-    padding: 15px;
-    gap: 5px;
-    margin-right: 120px;
-    margin-left: 120px;
-    border: 10px;
-    border: 2px solid orangered; 
+/* Generic/global attribute section*/ 
+* { 
+  border: 2px solid orangered; 
+}
+body {
+  display:flex; 
+  flex-direction: column;
+}
+button {
+  background-color: #3882f6;
+  color: white; 
+  border-radius: 15px;
+}
+h1 { 
+  align-self: center;
+}
+/* Class section*/
+
+/* Section 1*/ 
+  
+.section1 { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
     }
 
-  .items {
-    width: 88px;
-    background-color: #1f2937;
-    padding: 15px;
-    border: 2px solid white;
-    color: white;
-  }
+/* Header - right link and left logo */ 
 
-  .logo {
-    width: 120px;
-    background-color: #1f2937;
-    padding: 15px;
-    border: 5px;
-    color: white;
-    border: 2px solid orangered; 
-  }
-
-  .footer {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #1f2937;
-    color: white; 
-    border: 2px solid orangered; 
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #1f2937;
-    height: 100px; 
-    border: 2px solid orangered; 
-    }
-
-    .hero-container {
-        display: flex;
-        justify-content: space-between;
-        flex-flow: wrap row;
+    .header {
+      display: flex;
+      justify-content: space-around;
+      background-color: #1f2937;
+      }
+      .logo {
+        padding: 15px; 
         background-color: #1f2937;
-        height: 150px; 
-        color: white;
-        padding: 120px; 
-        border: 10px; 
-        border: 2px solid orangered; 
+        font-size: 24px;
+        color: #f9faf8;
+      }
+
+      .hyperlinks-container {
+        display: flex;
+        flex-flow: row wrap; 
+        align-items: flex-start;
+        background-color: #1f2937;
+        gap: 5px;
+        border: 10px;
+      }
+
+        .link {
+          width: 88px;
+          background-color: #1f2937;
+          padding: 15px;
+          color: white;
         }
 
+/* Hero Section - hero text and right logo */ 
 
+   .hero-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #1f2937;
+        color: white;
+        }
 
         .hero-picture {
-            width: 300px; 
-            height: 120px; 
-            border: 2px solid orangered; 
+         
         }
 
         .hero-text { 
-            font-size: 48px; 
             font-weight: extra-bold;
-            color: #f9faf8
-
+            color: #f9faf8;
+           
         }
 
 
+/* Section 2 - boxes with info and text */ 
+
         .random-info {
-            display: flex;
-            justify-content: space-evenly;
+            display: flex; 
+            justify-content: center;
             align-items: center;
-            flex-flow: wrap row;
+            flex-flow: wrap;
             background-color: white;
-            height: 100px; 
             color: #1f2937;
-            padding: 120px; 
+            padding: 50px; 
             border: 10px; 
-            border: 2px solid orangered; 
+            gap: 30px; 
             }
 
                     .box-items {
-                    width: 50px;
-                    height: 50px; 
+                    width: 150px;
+                    height: 150px; 
                     background-color: white;
-                    padding: 20px;
                     border: 2px solid blue;
+                    border-radius: 25px;
                     color: white;
                   }
+                  .text {
+                    text-align: center;
+                  }
+                   
+
+.item { 
+  width: 150px; 
+  height: 150px; 
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row; 
+  justify-content: center;
+  padding: 8px; 
+  gap: 8px; 
+}
+
+/* Quote Section - quote and author */ 
 
                   .quote-section {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     background-color: E5E7EB;
-                    height: 100px; 
+                   
                     color: #1f2937;
                     padding: 120px; 
-                    border: 2px solid orangered; 
                     }
 
                     .quote-text { 
@@ -111,25 +132,24 @@
                         justify-content: center;
                         align-items: center;
                         flex-flow: wrap row;
-                        border: 2px solid orangered; 
-                        height: 200px; 
-                        width: 400px; 
+
+                        
                         font-size: 36px;
                         font-style: italic;
                         font-weight: lighter; 
                         color: #1F2937; 
-
                     }
+
+/* Call to Action Section - sign up module */ 
 
                     .action-section {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         background-color: white;
-                        height: 100px; 
+                    
                         color: #1f2937;
-                        padding: 120px; 
-                        border: 2px solid orangered; 
+                      
                         }
     
                         .action-text { 
@@ -139,15 +159,23 @@
                             flex-flow: wrap row;
                             background-color: #3882f6;
                             color: white;
-                            border: 2px solid orangered; 
-                            height: 100px; 
-                            width: 550px; 
+
+                 
                         }
 
-                        .action-button {
-                            background-color: #3882f6;
-                            border: 2px solid white; 
-                            color: white; 
-                            
 
+                       
+                        .action-button {
+                        border: 2px solid white;   
+                        }
+
+/* Footer Section - copyright */ 
+
+                        .footer {
+                          display: flex;
+                          align-content: center;
+                          justify-content: center;
+                          background-color: #1f2937;
+                          color: white; 
+                         
                         }
