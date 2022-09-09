@@ -1,11 +1,11 @@
 
 /* Generic/global attribute section*/ 
-* { 
-  border: 2px solid orangered; 
-}
+
+
 body {
   display:flex; 
   flex-direction: column;
+  font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'; 
 }
 button {
   background-color: #3882f6;
@@ -14,6 +14,19 @@ button {
 }
 h1 { 
   align-self: center;
+ 
+}
+
+p {
+  margin: 0; 
+}
+
+h3 { 
+  margin: 0; 
+}
+
+text { 
+  font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* Class section*/
 
@@ -38,6 +51,7 @@ h1 {
         background-color: #1f2937;
         font-size: 24px;
         color: #f9faf8;
+        font-weight: bolder; 
       }
 
       .hyperlinks-container {
@@ -71,9 +85,9 @@ h1 {
         }
 
         .hero-text { 
-            font-weight: extra-bold;
-            color: #f9faf8;
-           
+          font-weight: extra-bold;
+          color: #f9faf8;
+           width: 350px; 
         }
 
 
@@ -83,10 +97,10 @@ h1 {
             display: flex; 
             justify-content: center;
             align-items: center;
-            flex-flow: wrap;
+           
             background-color: white;
             color: #1f2937;
-            padding: 50px; 
+            padding: 70px; 
             border: 10px; 
             gap: 30px; 
             }
@@ -119,12 +133,9 @@ h1 {
 
                   .quote-section {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: E5E7EB;
-                   
                     color: #1f2937;
                     padding: 120px; 
+                    background-color: #e5e7eb;
                     }
 
                     .quote-text { 
@@ -132,8 +143,6 @@ h1 {
                         justify-content: center;
                         align-items: center;
                         flex-flow: wrap row;
-
-                        
                         font-size: 36px;
                         font-style: italic;
                         font-weight: lighter; 
@@ -145,37 +154,46 @@ h1 {
                     .action-section {
                         display: flex;
                         justify-content: center;
-                        align-items: center;
                         background-color: white;
-                    
-                        color: #1f2937;
-                      
+                        
                         }
     
+                        .action-module {
+                          display: flex;
+                          justify-content: center;
+                          align-content: center;
+                          flex-flow: wrap ;
+                          background-color: #3882f6;
+                          border-radius: 25px;
+                          margin: 100px; 
+                          
+                        }
+                      
                         .action-text { 
                             display: flex;
                             justify-content: center;
-                            align-items: center;
-                            flex-flow: wrap row;
+                            flex-flow: wrap column;
+                            padding: 25px; 
                             background-color: #3882f6;
                             color: white;
-
-                 
+                            border-radius: 25px;
+                            
                         }
 
-
-                       
                         .action-button {
-                        border: 2px solid white;   
+                        border: 2px solid white;  
+                        align-self: center;  
+                        align-item: right; 
+                        margin: 50px; 
                         }
 
 /* Footer Section - copyright */ 
 
                         .footer {
                           display: flex;
-                          align-content: center;
+                          align-items: center;
                           justify-content: center;
                           background-color: #1f2937;
                           color: white; 
-                         
+                          height: 100px; 
                         }
